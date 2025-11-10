@@ -1,0 +1,6 @@
+[submodule "Avenger-285714.github.io"]
+	path = Avenger-285714.github.io
+	url = git@github.com:Avenger-285714/Avenger-285714.github.io.git
+[submodule "hexo-theme-particlex"]
+	path = hexo-theme-particlex
+	url = git@github.com:Avenger-285714/hexo-theme-particlex.git
