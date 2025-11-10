@@ -145,4 +145,9 @@ git push
 
 ## 📄 License
 
-MIT
+本仓库采用混合许可模式：
+
+- **AGPL-3.0-only**: 仓库中除 `hexo-theme-particlex` 之外的所有部分，包括主项目代码和 `Avenger-285714.github.io` 子模块，均在 **GNU Affero General Public License v3.0** 下开源。详细信息请参阅 [LICENSE](LICENSE) 文件。
+- **MIT**: `hexo-theme-particlex` 子模块遵循其原始的 **MIT License**。
+
+这意味着您在使用、修改和分发本仓库内容时，需要同时遵守这两种协议的规定。
