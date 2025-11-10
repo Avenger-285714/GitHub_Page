@@ -39,7 +39,7 @@ npm install
 
 ```bash
 cd hexo-blog
-hexo server
+npx hexo server
 # 访问 http://localhost:4000
 ```
 
@@ -47,7 +47,7 @@ hexo server
 
 ```bash
 cd hexo-blog
-hexo generate
+npx hexo generate
 # 生成的文件在 hexo-blog/public/ 目录
 ```
 
@@ -105,14 +105,14 @@ git submodule update
 
 ```bash
 cd hexo-blog
-hexo new post "文章标题"
+npx hexo new post "文章标题"
 ```
 
 ### 部署到 GitHub Pages
 
 ```bash
 cd hexo-blog
-hexo clean && hexo generate
+npx hexo clean && npx hexo generate
 
 # 复制生成的文件到部署仓库
 cp -r public/* ../Avenger-285714.github.io/
