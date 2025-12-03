@@ -42,3 +42,5 @@
 - 生成后的文件先落在 `hexo-blog/public/`。若不用 `hexo deploy`，需 `cp -r public/* ../Avenger-285714.github.io/`，然后在子模块内 `git add . && git commit -m "Update blog" && git push`，最后回到主仓库 `git add Avenger-285714.github.io` 记录指针。
 - 更新任何子模块后，请运行 `git status --submodule` 检查指针是否已暂存，避免遗漏。
 - 主仓库采用 AGPL-3.0-only，主题子模块为 MIT。新增文件时按所在目录继承对应许可证，确保引用和分发方式符合许可要求。
+- **禁止破坏 `Avenger-285714.github.io` 子模块的 git 历史**：不要对该仓库执行 `git reset --hard`、`git rebase`、`git push -f` 等会改写历史的操作。如需修正错误提交，请使用 `git revert` 生成新提交来撤销变更。
+- **每次构建发布后同步主仓库**：完成 `hexo deploy` 或手动推送 `Avenger-285714.github.io` 后，必须回到主仓库执行 `git add -A && git commit -m "描述信息" && git push` 将所有变更（包括子模块指针更新）同步推送到远程。
